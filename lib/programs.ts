@@ -85,7 +85,7 @@ export const programsConfiguration: ProgramsConfiguration = {
       id: "group-classes",
       label: "Group classes",
       presentation: "classes",
-      serviceIds: ["conditioning", "aerobics"],
+      serviceIds: ["conditioning", "aerobics", "zumba"],
     },
     {
       id: "support",

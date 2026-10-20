@@ -6,8 +6,9 @@ import type { Service } from "./types";
  * mechanism that prevents an unverified/discontinued program from silently
  * appearing on a gym website.
  *
- * URBAZ FITNESS CENTRE — all 7 programs from docs/gym-research.md
- * (PROGRAMS.*). Every entry is PUBLICLY_REPORTED (APTS Health / LyfSkills
+ * URBAZ FITNESS CENTRE — the 7 programs from docs/gym-research.md
+ * (PROGRAMS.*) plus Zumba, added at the owner's request. Every entry except
+ * Zumba is PUBLICLY_REPORTED (APTS Health / LyfSkills
  * listings); owner verification of current availability is required before
  * final-client production. No schedule, trainer, outcome or health claim is
  * added. "CrossFit-style" is deliberately worded: no official CrossFit
@@ -49,8 +50,8 @@ export const services: Service[] = [
   },
   {
     id: "conditioning",
-    name: "High-Intensity Interval Training (HIIT)",
-    description: "HIIT exercise classes for conditioning. Ask the gym for current timings.",
+    name: "HIIT",
+    description: "High-intensity interval training (HIIT) exercise classes for conditioning. Ask the gym for current timings.",
     icon: "equipment",
     image: `${ASSET}-hiit.jpg`,
     verified: true,
@@ -75,6 +76,15 @@ export const services: Service[] = [
     image: `${ASSET}-aerobics.jpg`,
     verified: true,
     ctaLabel: "Ask about aerobics",
+    ctaHref: undefined,
+  },
+  {
+    id: "zumba",
+    name: "Zumba",
+    description: "Zumba dance-fitness classes for cardio and general conditioning. Ask the gym for class timings.",
+    icon: "cardio",
+    verified: true,
+    ctaLabel: "Ask about Zumba",
     ctaHref: undefined,
   },
   {
